@@ -1,36 +1,37 @@
-
 let firstName: string = " Can";
-let lastName: string = " Boz"
+let lastName: string = " Boz";
 
 let age: number = 29;
-let isUpdated : boolean = true;
-
+let isUpdated: boolean = true;
 
 console.log("Typescripte girdik");
 console.log("Can Boz");
 console.log("Egitimimize hosgeldiniz");
 
-
 //* type language typscript - age degerine string atayamayiz
 
-
-
-function display (id: any, name:string) {
-
-    console.log("Id = " + id + ", Name =" + name)
+function display(id: any, name: string) {
+  console.log("Id = " + id + ", Name =" + name);
 }
 
-let firstNames:Array<string> = ['Can', 'Hasan' ,'Ayse']
+let firstNames: Array<string> = ["Can", "Hasan", "Ayse"];
 
-console.log(firstNames)
+console.log(firstNames);
 
-let ids : Array <number> ;
-ids = [23, 34, 100, 124, 44]
+let ids: Array<number>;
+ids = [23, 34, 100, 124, 44];
 
-console.log(ids)
+console.log(ids);
 
+let values: (string | number)[] = ["Apple", 2, "Orange", 3, 4, "Bananaa"];
 
-let values : (string | number) [] = ['Apple', 2 , 'Orange' , 3, 4, 'Bananaa' ]
+console.log(values);
 
-console.log(values)
+let fruits: Array<string>;
+fruits = ["Apple", "Orange", "Banana"];
 
+for (let i = 0; i < fruits.length; i++) {
+ console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
+}
+
+console.log(fruits[0])

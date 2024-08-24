@@ -9,10 +9,16 @@ console.log("Egitimimize hosgeldiniz");
 function display(id, name) {
     console.log("Id = " + id + ", Name =" + name);
 }
-var firstNames = ['Can', 'Hasan', 'Ayse'];
+var firstNames = ["Can", "Hasan", "Ayse"];
 console.log(firstNames);
 var ids;
 ids = [23, 34, 100, 124, 44];
 console.log(ids);
-var values = ['Apple', 2, 'Orange', 3, 4, 'Bananaa'];
+var values = ["Apple", 2, "Orange", 3, 4, "Bananaa"];
 console.log(values);
+var fruits;
+fruits = ["Apple", "Orange", "Banana"];
+for (var i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
+}
+console.log(fruits[0]);
