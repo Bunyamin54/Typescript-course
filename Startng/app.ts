@@ -23,3 +23,14 @@ function display (id: any, name:string) {
 let firstNames:Array<string> = ['Can', 'Hasan' ,'Ayse']
 
 console.log(firstNames)
+
+let ids : Array <number> ;
+ids = [23, 34, 100, 124, 44]
+
+console.log(ids)
+
+
+let values : (string | number) [] = ['Apple', 2 , 'Orange' , 3, 4, 'Bananaa' ]
+
+console.log(values)
+
