@@ -194,5 +194,6 @@ console.log(degisken);
 //     console.log("Can Boz")
 //  }
 //  bastir()
-var bastir = function () { return console.log('Can Boz'); };
-bastir();
+//* tek satir komut
+//   let bastir = () => console.log('Can Boz')
+//   bastir()

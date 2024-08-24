@@ -315,7 +315,7 @@ console.log(degisken);
 
 //  bastir()
 
+//* tek satir komut
 
-
-  let bastir = () => console.log('Can Boz')
-  bastir()
+//   let bastir = () => console.log('Can Boz')
+//   bastir()
