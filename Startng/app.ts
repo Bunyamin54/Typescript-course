@@ -138,10 +138,34 @@ console.log(typeof(sayac))
 //     return counter++;
 // }
 
-function sum(a:number , b:number){
+// function sum(a:number , b:number){
 
-    return a+b;
+//     return a+b;
+// }
+// let total: number = sum (10,15)
+// let total: string = sum (10,15)
+
+//* type assertion
+
+let code: any = 123;
+
+let empCode = <number> code;
+console.log(typeof(empCode))
+
+
+
+interface Employee {
+
+    name:string,
+    code:number
 }
-let total: number = sum (10,15)
-let total: string = sum (10,15)
+
+
+
+let employee = < Employee>{}
+
+console.log(typeof(employee))
+employee.name = 'Can';
+
+console.log(employee)
 

@@ -77,8 +77,16 @@ console.log(typeof (sayac));
 // function increment(counter: number){
 //     return counter++;
 // }
-function sum(a, b) {
-    return a + b;
-}
-var total = sum(10, 15);
-var total = sum(10, 15);
+// function sum(a:number , b:number){
+//     return a+b;
+// }
+// let total: number = sum (10,15)
+// let total: string = sum (10,15)
+//* type assertion
+var code = 123;
+var empCode = code;
+console.log(typeof (empCode));
+var employee = {};
+console.log(typeof (employee));
+employee.name = 'Can';
+console.log(employee);
