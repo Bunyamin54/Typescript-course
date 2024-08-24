@@ -9,3 +9,5 @@ console.log("Egitimimize hosgeldiniz");
 function display(id, name) {
     console.log("Id = " + id + ", Name =" + name);
 }
+var firstNames = ['Can', 'Hasan', 'Ayse'];
+console.log(firstNames);

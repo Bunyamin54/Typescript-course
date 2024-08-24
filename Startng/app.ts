@@ -19,3 +19,7 @@ function display (id: any, name:string) {
 
     console.log("Id = " + id + ", Name =" + name)
 }
+
+let firstNames:Array<string> = ['Can', 'Hasan' ,'Ayse']
+
+console.log(firstNames)
