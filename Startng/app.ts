@@ -298,12 +298,23 @@ console.log(degisken);
   
  //* arrow
 
- let carpim = (a: number , b: number ):number => {
+//  let carpim = (a: number , b: number ):number => {
 
-    return a* 5
+//     return a* 5
+//  }
+
+
+//   let degisken =carpim (4,5)
+
+//   console.log(degisken)
+
+
+ let bastir = () => {
+    console.log("Can Boz")
  }
 
+ bastir()
 
-  let degisken =carpim (4,5)
 
-  console.log(degisken)
+
+  

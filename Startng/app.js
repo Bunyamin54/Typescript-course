@@ -185,8 +185,12 @@ console.log(degisken);
 //     return a * b;
 //   }
 //* arrow
-var carpim = function (a, b) {
-    return a * 5;
+//  let carpim = (a: number , b: number ):number => {
+//     return a* 5
+//  }
+//   let degisken =carpim (4,5)
+//   console.log(degisken)
+var bastir = function () {
+    console.log("Can Boz");
 };
-var degisken = carpim(4, 5);
-console.log(degisken);
+bastir();
