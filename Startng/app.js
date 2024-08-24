@@ -18,9 +18,9 @@ var values = ["Apple", 2, "Orange", 3, 4, "Bananaa"];
 console.log(values);
 var fruits;
 fruits = ["Apple", "Orange", "Banana"];
-for (var i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
-}
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
+// }
 console.log(fruits[0]);
 //* Tupple
 var Id = 1;
@@ -74,18 +74,6 @@ sayHello();
 // ? inference -  typ belirmezsek de tutlur
 var sayac = 0;
 console.log(typeof sayac);
-// function increment(counter: number){
-//     return counter++;
-// }
-// function sum(a:number , b:number){
-//     return a+b;
-// }
-// let total: number = sum (10,15)
-// let total: string = sum (10,15)
-//* type assertion
-var code = 123;
-var empCode = code;
-console.log(typeof empCode);
 var employee = {};
 console.log(typeof employee);
 employee.name = "Can";
@@ -133,4 +121,8 @@ switch (day) {
     default:
         console.log("Boyle bir gun yok");
         break;
+}
+//* for loop
+for (var i = 0; i < 3; i++) {
+    console.log("I degerim", i);
 }

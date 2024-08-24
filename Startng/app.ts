@@ -30,9 +30,9 @@ console.log(values);
 let fruits: Array<string>;
 fruits = ["Apple", "Orange", "Banana"];
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
-}
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
+// }
 
 console.log(fruits[0]);
 
@@ -136,10 +136,10 @@ console.log(typeof sayac);
 
 //* type assertion
 
-let code: any = 123;
+// let code: any = 123;
 
-let empCode = <number>code;
-console.log(typeof empCode);
+// let empCode = <number>code;
+// console.log(typeof empCode);
 
 interface Employee {
   name: string;
@@ -202,4 +202,21 @@ switch (day) {
   default :
     console.log("Boyle bir gun yok");
     break;
+}
+
+
+//* for loop
+
+
+for (let i = 0; i < 3 ; i++ ) {
+ 
+    console.log("I degerim", i)
+
+}
+
+
+let arr = [10 ,20, 30, 40 ]
+
+for (let item of arr ){
+    console.log(item),
 }
