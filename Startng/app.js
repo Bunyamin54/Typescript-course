@@ -156,7 +156,12 @@ do {
 //  }
 //  let toplam = add(10,20)
 //  console.log(toplam)
-function bastir() {
-    console.log("Can Boz");
+// function bastir(): void {  //* void return ozelligi yoktur  hicbirsey yazmassak default number oluyor type
+//   console.log("Can Boz");
+// }
+// bastir();
+function birlestir(ad, soyad) {
+    return ad + ' ' + soyad;
 }
-bastir();
+var degisken = birlestir('Can', ' Boz');
+console.log(degisken);

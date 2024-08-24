@@ -252,9 +252,17 @@ do {
 
 //  console.log(toplam)
 
-function bastir(): void {  //* void return ozelligi yoktur  hicbirsey yazmassak default number oluyor type
-  console.log("Can Boz");
+// function bastir(): void {  //* void return ozelligi yoktur  hicbirsey yazmassak default number oluyor type
+//   console.log("Can Boz");
 
+// }
+
+// bastir();
+
+
+function birlestir ( ad: string , soyad:string): string {
+    return ad + ' ' + soyad
 }
 
-bastir();
+let degisken = birlestir ('Can', ' Boz')
+console.log(degisken)
