@@ -95,3 +95,13 @@ console.log(Media[3])  // Book
 let code : string | number | boolean = '123'  //* union tanimlayabiliriz istedigimiz dat typlari 
 
 console.log(code)
+
+
+//* any  backend datatype degisince typ bilmiyorsak bir karmasa varsa any yazip gecriz
+
+
+let someThing : any = 'Hello'
+
+someThing = 45  //* type any oldugu icin istedigimiz atama yapariz
+console.log(someThing)
+
