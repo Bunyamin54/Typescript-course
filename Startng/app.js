@@ -102,3 +102,5 @@ else if (x < y) {
 else {
     console.log("X Y den kucuktur veya esittir.");
 }
+//* Ternary 
+x > y ? console.log(" X Y den buyuktur") : console.log("X Y den kucuktur veya esittir.");
