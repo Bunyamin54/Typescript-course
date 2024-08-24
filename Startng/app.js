@@ -22,3 +22,7 @@ for (var i = 0; i < fruits.length; i++) {
     console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
 }
 console.log(fruits[0]);
+//* Tupple
+var Id = 1;
+var instructureName = 'Can';
+var instructure = [1, 'Can'];

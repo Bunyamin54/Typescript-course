@@ -35,3 +35,10 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 console.log(fruits[0])
+
+//* Tupple
+
+let Id: number = 1;
+let instructureName : string = 'Can';
+
+let instructure : [number, string] = [1, 'Can']
