@@ -118,3 +118,18 @@ function sayHello(): void {
 }
 
 sayHello()
+
+//! never data type geriye hicbir value donmezse hata firlatmasi lazm
+
+function throwError(errorMsg: string): never {
+    throw new Error(errorMsg);
+}
+
+
+throwError("Hata")
+
+
+// ? inference -  typ belirmezsek de tutlur
+
+let sayac = 0 ;
+console.log(typeof(sayac))

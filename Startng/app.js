@@ -66,3 +66,11 @@ function sayHello() {
     console.log('Hi');
 }
 sayHello();
+//! never data type geriye hicbir value donmezse hata firlatmasi lazm
+function throwError(errorMsg) {
+    throw new Error(errorMsg);
+}
+throwError("Hata");
+// ? inference -  typ belirmezsek de tutlur
+var sayac = 0;
+console.log(typeof (sayac));
