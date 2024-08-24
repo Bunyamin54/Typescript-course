@@ -151,8 +151,12 @@ do {
     counter++;
 } while (counter < 5);
 //* function
-function add(a, b) {
-    return a + b;
+//  function add (a: number , b: number): number{  //* inference  burdaki number
+//     return a+b
+//  }
+//  let toplam = add(10,20)
+//  console.log(toplam)
+function bastir() {
+    console.log("Can Boz");
 }
-var toplam = add(10, 20);
-console.log(toplam);
+bastir();

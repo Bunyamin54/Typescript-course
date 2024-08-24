@@ -232,24 +232,29 @@ while (counter < 5) {
   console.log(counter);
   counter++;
 
-  if (counter == 3 ){
-    break
+  if (counter == 3) {
+    break;
   }
 }
 
 do {
-    console.log(counter);
-    counter++;
-  
-} while ( counter < 5)
+  console.log(counter);
+  counter++;
+} while (counter < 5);
 
+//* function
 
-    //* function
+//  function add (a: number , b: number): number{  //* inference  burdaki number
+//     return a+b
+//  }
 
-     function add (a: number , b: number): number{  //* inference  burdaki number
-        return a+b
-     }
+//  let toplam = add(10,20)
 
-     let toplam = add(10,20)
+//  console.log(toplam)
 
-     console.log(toplam)
+function bastir(): void {  //* void return ozelligi yoktur  hicbirsey yazmassak default number oluyor type
+  console.log("Can Boz");
+
+}
+
+bastir();
