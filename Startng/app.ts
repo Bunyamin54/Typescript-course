@@ -218,5 +218,5 @@ for (let i = 0; i < 3 ; i++ ) {
 let arr = [10 ,20, 30, 40 ]
 
 for (let item of arr ){
-    console.log(item),
+    console.log(item)
 }

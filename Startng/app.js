@@ -126,3 +126,8 @@ switch (day) {
 for (var i = 0; i < 3; i++) {
     console.log("I degerim", i);
 }
+var arr = [10, 20, 30, 40];
+for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+    var item = arr_1[_i];
+    console.log(item);
+}
