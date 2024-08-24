@@ -218,8 +218,27 @@ for (let item of arrr) {
 
 let str = "Can Boz";
 
-for (let item of str){
-    console.log(item)
+for (let item of str) {
+  console.log(item);
 }
 
 //* index degeri in ile kullanilir
+
+//* while dongusu
+
+let counter = 10;
+
+while (counter < 5) {
+  console.log(counter);
+  counter++;
+
+  if (counter == 3 ){
+    break
+  }
+}
+
+do {
+    console.log(counter);
+    counter++;
+  
+} while ( counter < 5)

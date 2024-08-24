@@ -137,3 +137,16 @@ for (var _a = 0, str_1 = str; _a < str_1.length; _a++) {
     console.log(item);
 }
 //* index degeri in ile kullanilir
+//* while dongusu
+var counter = 10;
+while (counter < 5) {
+    console.log(counter);
+    counter++;
+    if (counter == 3) {
+        break;
+    }
+}
+do {
+    console.log(counter);
+    counter++;
+} while (counter < 5);
