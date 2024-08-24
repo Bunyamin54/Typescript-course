@@ -259,7 +259,6 @@ do {
 
 // bastir();
 
-
 // function birlestir ( ad: string , soyad:string): string {
 //     return ad + ' ' + soyad
 // }
@@ -267,14 +266,24 @@ do {
 // let degisken = birlestir ('Can', ' Boz')
 // console.log(degisken)
 
+//* default parametrel
 
-//* default parametrel 
-
-function birlestir ( ad: string , soyad: 'Boz'): string {
-    return ad + ' ' + soyad
+function birlestir(ad: string, soyad: "Boz"): string {
+  return ad + " " + soyad;
 }
 
-let degisken = birlestir ('Can', ' Bozzz') // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu 
-console.log(degisken)
+let degisken = birlestir("Can", " Bozzz"); // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu
+console.log(degisken);
 
+//* Arrow functions  optional parameter
 
+function carpim(a: number, b: number, c?: number) {
+  if (typeof c!== "undefined") {
+    return a * b * c;
+  }
+  return a * b;
+}
+
+let degisken = carpim(5, 10, 3);
+
+console.log(degisken);

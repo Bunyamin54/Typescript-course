@@ -165,9 +165,18 @@ do {
 // }
 // let degisken = birlestir ('Can', ' Boz')
 // console.log(degisken)
-//* default parametrel 
+//* default parametrel
 function birlestir(ad, soyad) {
-    return ad + ' ' + soyad;
+    return ad + " " + soyad;
 }
-var degisken = birlestir('Can', ' Bozzz'); // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu 
+var degisken = birlestir("Can", " Bozzz"); // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu
+console.log(degisken);
+//* Arrow functions  optional parameter
+function carpim(a, b, c) {
+    if (typeof c !== "undefined") {
+        return a * b * c;
+    }
+    return a * b;
+}
+var degisken = carpim(5, 10, 3);
 console.log(degisken);
