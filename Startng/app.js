@@ -34,3 +34,12 @@ instructure1 = {
     jobTitle: "Devoloper",
 };
 console.log(instructure1.age);
+//* Enum 
+var Media;
+(function (Media) {
+    Media[Media["Newspaper"] = 1] = "Newspaper";
+    Media[Media["Nemsletter"] = 2] = "Nemsletter";
+    Media[Media["Magazine"] = 3] = "Magazine";
+    Media[Media["Book"] = 4] = "Book";
+})(Media || (Media = {}));
+console.log(Media.Magazine);

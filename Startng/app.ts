@@ -65,3 +65,14 @@ instructure1 = {
 
 console.log(instructure1.age)
 
+//* Enum 
+
+enum Media {
+
+    Newspaper = 1,  //* baslangic degerini degistirebiliyoruz
+    Nemsletter,
+    Magazine,
+    Book
+}
+
+console.log(Media.Magazine)
