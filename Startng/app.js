@@ -134,5 +134,6 @@ for (var _i = 0, arrr_1 = arrr; _i < arrr_1.length; _i++) {
 var str = "Can Boz";
 for (var _a = 0, str_1 = str; _a < str_1.length; _a++) {
     var item = str_1[_a];
-    console.log(str);
+    console.log(item);
 }
+//* index degeri in ile kullanilir

@@ -219,5 +219,7 @@ for (let item of arrr) {
 let str = "Can Boz";
 
 for (let item of str){
-    console.log(str)
+    console.log(item)
 }
+
+//* index degeri in ile kullanilir
