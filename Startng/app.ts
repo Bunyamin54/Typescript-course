@@ -46,14 +46,11 @@ let instructure: [number, string] = [1, "Can"];
 //* Data type object
 
 type Person = {
-
-firstName:string,
-lastName: string,
-age: number,
-jobTitle: string,
-
-}
-
+  firstName: string;
+  lastName: string;
+  age: number;
+  jobTitle: string;
+};
 
 let instructure1: Person;
 instructure1 = {
@@ -63,24 +60,23 @@ instructure1 = {
   jobTitle: "Devoloper",
 };
 
-console.log(instructure1.age)
+console.log(instructure1.age);
 
-//* Enum 
+//* Enum
 
 enum Media {
-
-    Newspaper = 1,  //* baslangic degerini degistirebiliyoruz
-    Nemsletter,
-    Magazine,
-    Book
+  Newspaper = 1, //* baslangic degerini degistirebiliyoruz
+  Nemsletter,
+  Magazine,
+  Book,
 }
 
 console.log(Media.Magazine);
-console.log(Media[3])  // Book 
+console.log(Media[3]); // Book
 
 // enum PrintMedia {
 
-//     Newspaper = 'Newspaper', 
+//     Newspaper = 'Newspaper',
 //     Newsletter = 'Newsletter',
 //     Magazine = 'Magazine',
 //     Book = 'Book'
@@ -89,35 +85,30 @@ console.log(Media[3])  // Book
 // console.log(PrintMedia.Newsletter)
 // console.log(PrintMedia['Newspaper'])
 
-
 //*! Union
 
-let code : string | number | boolean = '123'  //* union tanimlayabiliriz istedigimiz dat typlari 
+let code: string | number | boolean = "123"; //* union tanimlayabiliriz istedigimiz dat typlari
 
-console.log(code)
-
+console.log(code);
 
 //! Any  backend datatype degisince typ bilmiyorsak bir karmasa varsa any yazip gecriz
 
+let someThing: any = "Hello";
 
-let someThing : any = 'Hello'
+someThing = 45; //* type any oldugu icin istedigimiz atama yapariz
+console.log(someThing);
 
-someThing = 45  //* type any oldugu icin istedigimiz atama yapariz
-console.log(someThing)
+let arr: any[] = ["John", true, 125];
 
-
-let arr: any [] = ['John' , true, 125]
-
-console.log(arr)
+console.log(arr);
 
 //!  Void fonksiyon geriye deger dondurmuyorsa void ile donuyoruz
 
 function sayHello(): void {
-
-    console.log('Hi')
+  console.log("Hi");
 }
 
-sayHello()
+sayHello();
 
 //! never data type geriye hicbir value donmezse hata firlatmasi lazm
 
@@ -125,14 +116,12 @@ sayHello()
 //     throw new Error(errorMsg);
 // }
 
-
 // throwError("Hata")
-
 
 // ? inference -  typ belirmezsek de tutlur
 
-let sayac = 0 ;
-console.log(typeof(sayac))
+let sayac = 0;
+console.log(typeof sayac);
 
 // function increment(counter: number){
 //     return counter++;
@@ -149,47 +138,68 @@ console.log(typeof(sayac))
 
 let code: any = 123;
 
-let empCode = <number> code;
-console.log(typeof(empCode))
-
-
+let empCode = <number>code;
+console.log(typeof empCode);
 
 interface Employee {
-
-    name:string,
-    code:number
+  name: string;
+  code: number;
 }
 
+let employee = <Employee>{};
 
+console.log(typeof employee);
+employee.name = "Can";
 
-let employee = < Employee>{}
+console.log(employee);
 
-console.log(typeof(employee))
-employee.name = 'Can';
+//* If else ternary
 
-console.log(employee)
+let x: number = 15;
 
- //* If else ternary
+let y: number = 25;
 
- let x : number = 15;
+if (x > y) {
+  console.log(" X Y den buyuktur");
+} else if (x < y) {
+  console.log("X Y den kucuktur");
+} else {
+  console.log("X Y den kucuktur veya esittir.");
+}
 
- let y: number = 25;
+//* Ternary
 
- if (x > y) {
+x > y
+  ? console.log(" X Y den buyuktur")
+  : console.log("X Y den kucuktur veya esittir.");
 
-      console.log(" X Y den buyuktur")
+//* Switch Case
 
- } else if  (x < y ){
+let day: number = 5;
 
-    console.log("X Y den kucuktur")
- }
-  
- 
- else {
-    console.log("X Y den kucuktur veya esittir.")
- }
-
-
- //* Ternary 
-
- x > y ? console.log(" X Y den buyuktur")  : console.log("X Y den kucuktur veya esittir.")
+switch (day) {
+  case 0:
+    console.log("Pazar");
+    break;
+  case 1:
+    console.log("Pazartesi");
+    break;
+  case 2:
+    console.log("Sali");
+    break;
+  case 3:
+    console.log("Carsamba");
+    break;
+  case 4:
+    console.log("Persembe");
+    break;
+  case 5:
+    console.log("Cuma");
+    break;
+  case 6:
+    console.log("Cumartesi");
+    break;
+  default :
+    console.log("Boyle bir gun yok");
+    break;
+}

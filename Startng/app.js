@@ -34,7 +34,7 @@ instructure1 = {
     jobTitle: "Devoloper",
 };
 console.log(instructure1.age);
-//* Enum 
+//* Enum
 var Media;
 (function (Media) {
     Media[Media["Newspaper"] = 1] = "Newspaper";
@@ -43,9 +43,9 @@ var Media;
     Media[Media["Book"] = 4] = "Book";
 })(Media || (Media = {}));
 console.log(Media.Magazine);
-console.log(Media[3]); // Book 
+console.log(Media[3]); // Book
 // enum PrintMedia {
-//     Newspaper = 'Newspaper', 
+//     Newspaper = 'Newspaper',
 //     Newsletter = 'Newsletter',
 //     Magazine = 'Magazine',
 //     Book = 'Book'
@@ -53,17 +53,17 @@ console.log(Media[3]); // Book
 // console.log(PrintMedia.Newsletter)
 // console.log(PrintMedia['Newspaper'])
 //*! Union
-var code = '123'; //* union tanimlayabiliriz istedigimiz dat typlari 
+var code = "123"; //* union tanimlayabiliriz istedigimiz dat typlari
 console.log(code);
 //! Any  backend datatype degisince typ bilmiyorsak bir karmasa varsa any yazip gecriz
-var someThing = 'Hello';
+var someThing = "Hello";
 someThing = 45; //* type any oldugu icin istedigimiz atama yapariz
 console.log(someThing);
-var arr = ['John', true, 125];
+var arr = ["John", true, 125];
 console.log(arr);
 //!  Void fonksiyon geriye deger dondurmuyorsa void ile donuyoruz
 function sayHello() {
-    console.log('Hi');
+    console.log("Hi");
 }
 sayHello();
 //! never data type geriye hicbir value donmezse hata firlatmasi lazm
@@ -73,7 +73,7 @@ sayHello();
 // throwError("Hata")
 // ? inference -  typ belirmezsek de tutlur
 var sayac = 0;
-console.log(typeof (sayac));
+console.log(typeof sayac);
 // function increment(counter: number){
 //     return counter++;
 // }
@@ -85,10 +85,10 @@ console.log(typeof (sayac));
 //* type assertion
 var code = 123;
 var empCode = code;
-console.log(typeof (empCode));
+console.log(typeof empCode);
 var employee = {};
-console.log(typeof (employee));
-employee.name = 'Can';
+console.log(typeof employee);
+employee.name = "Can";
 console.log(employee);
 //* If else ternary
 var x = 15;
@@ -102,5 +102,35 @@ else if (x < y) {
 else {
     console.log("X Y den kucuktur veya esittir.");
 }
-//* Ternary 
-x > y ? console.log(" X Y den buyuktur") : console.log("X Y den kucuktur veya esittir.");
+//* Ternary
+x > y
+    ? console.log(" X Y den buyuktur")
+    : console.log("X Y den kucuktur veya esittir.");
+//* Switch Case
+var day = 5;
+switch (day) {
+    case 0:
+        console.log("Pazar");
+        break;
+    case 1:
+        console.log("Pazartesi");
+        break;
+    case 2:
+        console.log("Sali");
+        break;
+    case 3:
+        console.log("Carsamba");
+        break;
+    case 4:
+        console.log("Persembe");
+        break;
+    case 5:
+        console.log("Cuma");
+        break;
+    case 6:
+        console.log("Cumartesi");
+        break;
+    default:
+        console.log("Boyle bir gun yok");
+        break;
+}
