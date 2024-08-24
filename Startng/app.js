@@ -90,3 +90,12 @@ var employee = {};
 console.log(typeof (employee));
 employee.name = 'Can';
 console.log(employee);
+//* If else ternary
+var x = 15;
+var y = 25;
+if (x > y) {
+    console.log(" X Y den buyuktur");
+}
+else {
+    console.log("X Y den kucuktur veya esittir.");
+}

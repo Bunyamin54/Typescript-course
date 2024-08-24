@@ -169,3 +169,16 @@ employee.name = 'Can';
 
 console.log(employee)
 
+ //* If else ternary
+
+ let x : number = 15;
+
+ let y: number = 25;
+
+ if (x > y) {
+
+      console.log(" X Y den buyuktur")
+
+ } else {
+    console.log("X Y den kucuktur veya esittir.")
+ }
