@@ -199,24 +199,25 @@ switch (day) {
   case 6:
     console.log("Cumartesi");
     break;
-  default :
+  default:
     console.log("Boyle bir gun yok");
     break;
 }
 
-
 //* for loop
 
-
-for (let i = 0; i < 3 ; i++ ) {
- 
-    console.log("I degerim", i)
-
+for (let i = 0; i < 3; i++) {
+  console.log("I degerim", i);
 }
 
+let arrr = [10, 20, 30, 40];
 
-let arr = [10 ,20, 30, 40 ]
+for (let item of arrr) {
+  console.log(item);
+}
 
-for (let item of arr ){
-    console.log(item)
+let str = "Can Boz";
+
+for (let item of str){
+    console.log(str)
 }
