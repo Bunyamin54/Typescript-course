@@ -24,5 +24,13 @@ for (var i = 0; i < fruits.length; i++) {
 console.log(fruits[0]);
 //* Tupple
 var Id = 1;
-var instructureName = 'Can';
-var instructure = [1, 'Can'];
+var instructureName = "Can";
+var instructure = [1, "Can"];
+var instructure1;
+instructure1 = {
+    firstName: "Can",
+    lastName: "Boz",
+    age: 29,
+    jobTitle: "Devoloper",
+};
+console.log(instructure1.age);

@@ -31,14 +31,36 @@ let fruits: Array<string>;
 fruits = ["Apple", "Orange", "Banana"];
 
 for (let i = 0; i < fruits.length; i++) {
- console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
+  console.log(fruits[i]); // Appleapp.js:22 Orange app.js:22 Banan
 }
 
-console.log(fruits[0])
+console.log(fruits[0]);
 
 //* Tupple
 
 let Id: number = 1;
-let instructureName : string = 'Can';
+let instructureName: string = "Can";
 
-let instructure : [number, string] = [1, 'Can']
+let instructure: [number, string] = [1, "Can"];
+
+//* Data type object
+
+type Person = {
+
+firstName:string,
+lastName: string,
+age: number,
+jobTitle: string,
+
+}
+
+
+let instructure1: Person;
+instructure1 = {
+  firstName: "Can",
+  lastName: "Boz",
+  age: 29,
+  jobTitle: "Devoloper",
+};
+
+console.log(instructure1.age)
