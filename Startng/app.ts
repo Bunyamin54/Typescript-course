@@ -260,9 +260,21 @@ do {
 // bastir();
 
 
-function birlestir ( ad: string , soyad:string): string {
+// function birlestir ( ad: string , soyad:string): string {
+//     return ad + ' ' + soyad
+// }
+
+// let degisken = birlestir ('Can', ' Boz')
+// console.log(degisken)
+
+
+//* default parametrel 
+
+function birlestir ( ad: string , soyad: 'Boz'): string {
     return ad + ' ' + soyad
 }
 
-let degisken = birlestir ('Can', ' Boz')
+let degisken = birlestir ('Can', ' Bozzz') // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu 
 console.log(degisken)
+
+
