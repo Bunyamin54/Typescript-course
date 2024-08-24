@@ -96,6 +96,9 @@ var y = 25;
 if (x > y) {
     console.log(" X Y den buyuktur");
 }
+else if (x < y) {
+    console.log("X Y den kucuktur");
+}
 else {
     console.log("X Y den kucuktur veya esittir.");
 }

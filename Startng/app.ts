@@ -179,6 +179,12 @@ console.log(employee)
 
       console.log(" X Y den buyuktur")
 
- } else {
+ } else if  (x < y ){
+
+    console.log("X Y den kucuktur")
+ }
+  
+ 
+ else {
     console.log("X Y den kucuktur veya esittir.")
  }
