@@ -67,10 +67,18 @@ function sayHello() {
 }
 sayHello();
 //! never data type geriye hicbir value donmezse hata firlatmasi lazm
-function throwError(errorMsg) {
-    throw new Error(errorMsg);
-}
-throwError("Hata");
+// function throwError(errorMsg: string): never {
+//     throw new Error(errorMsg);
+// }
+// throwError("Hata")
 // ? inference -  typ belirmezsek de tutlur
 var sayac = 0;
 console.log(typeof (sayac));
+// function increment(counter: number){
+//     return counter++;
+// }
+function sum(a, b) {
+    return a + b;
+}
+var total = sum(10, 15);
+var total = sum(10, 15);
