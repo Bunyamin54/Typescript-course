@@ -190,7 +190,9 @@ console.log(degisken);
 //  }
 //   let degisken =carpim (4,5)
 //   console.log(degisken)
-var bastir = function () {
-    console.log("Can Boz");
-};
+//  let bastir = () => {
+//     console.log("Can Boz")
+//  }
+//  bastir()
+var bastir = function () { return console.log('Can Boz'); };
 bastir();

@@ -309,12 +309,13 @@ console.log(degisken);
 //   console.log(degisken)
 
 
- let bastir = () => {
-    console.log("Can Boz")
- }
+//  let bastir = () => {
+//     console.log("Can Boz")
+//  }
 
- bastir()
+//  bastir()
 
 
 
-  
+  let bastir = () => console.log('Can Boz')
+  bastir()
