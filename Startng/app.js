@@ -52,3 +52,6 @@ console.log(Media[3]); // Book
 // }
 // console.log(PrintMedia.Newsletter)
 // console.log(PrintMedia['Newspaper'])
+//* Union
+var code = '123'; //* union tanimlayabiliriz istedigimiz dat typlari 
+console.log(code);
