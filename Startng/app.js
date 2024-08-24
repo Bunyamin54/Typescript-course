@@ -43,3 +43,12 @@ var Media;
     Media[Media["Book"] = 4] = "Book";
 })(Media || (Media = {}));
 console.log(Media.Magazine);
+console.log(Media[3]); // Book 
+// enum PrintMedia {
+//     Newspaper = 'Newspaper', 
+//     Newsletter = 'Newsletter',
+//     Magazine = 'Magazine',
+//     Book = 'Book'
+// }
+// console.log(PrintMedia.Newsletter)
+// console.log(PrintMedia['Newspaper'])
