@@ -172,11 +172,21 @@ function birlestir(ad, soyad) {
 var degisken = birlestir("Can", " Bozzz"); // * bozzz degerini yolladigimiz iinc ukardaki boz default gecersiz oldu
 console.log(degisken);
 //* Arrow functions  optional parameter
-function carpim(a, b, c) {
-    if (typeof c !== "undefined") {
-        return a * b * c;
-    }
-    return a * b;
-}
-var degisken = carpim(5, 10, 3);
+// function carpim(a: number, b: number, c?: number) {
+//   if (typeof c!== "undefined") {
+//     return a * b * c;
+//   }
+//   return a * b;
+// }
+// let degisken = carpim(5, 10, 3); //* 150
+// console.log(degisken);
+//* Arrow 
+// function carpim(a: number, b: number) : number{
+//     return a * b;
+//   }
+//* arrow
+var carpim = function (a, b) {
+    return a * 5;
+};
+var degisken = carpim(4, 5);
 console.log(degisken);

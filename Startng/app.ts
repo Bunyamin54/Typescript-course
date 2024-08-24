@@ -277,13 +277,33 @@ console.log(degisken);
 
 //* Arrow functions  optional parameter
 
-function carpim(a: number, b: number, c?: number) {
-  if (typeof c!== "undefined") {
-    return a * b * c;
-  }
-  return a * b;
-}
+// function carpim(a: number, b: number, c?: number) {
+//   if (typeof c!== "undefined") {
+//     return a * b * c;
+//   }
+//   return a * b;
+// }
 
-let degisken = carpim(5, 10, 3);
+// let degisken = carpim(5, 10, 3); //* 150
 
-console.log(degisken);
+// console.log(degisken);
+
+
+//* Arrow 
+
+// function carpim(a: number, b: number) : number{
+    
+//     return a * b;
+//   }
+  
+ //* arrow
+
+ let carpim = (a: number , b: number ):number => {
+
+    return a* 5
+ }
+
+
+  let degisken =carpim (4,5)
+
+  console.log(degisken)
